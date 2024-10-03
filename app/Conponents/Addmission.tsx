@@ -12,7 +12,7 @@ export default function AdmissionForm(){
   const [date, setDate] = useState('');
   const [gender, setGender] = useState('');
   const [qualification, setQualification] = useState('');
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     console.log('Form submitted:', { name, email, phone,city,date,gender,qualification, course});
   };
